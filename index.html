@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Resources Homepage</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #4B0082; /* Dark violet in light mode */
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #4B0082; /* Adjusted to match light mode text */
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            display: block;
+            padding: 0.8rem 1rem;
+            background-color: #ecf0f1;
+            color: #4B0082; /* Match light mode text */
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4B0082;
+            color: white;
+        }
+
+        /* Grid layout for larger screens */
+        @media (min-width: 768px) {
+            main {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+
+            section {
+                margin-bottom: 0;
+            }
+        }
+
+        /* Dark mode toggle button */
+        #toggleDarkMode {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #4B0082; /* Adjusted to match theme */
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        #toggleDarkMode:hover {
+            background: #6A1B9A; /* Lighter violet on hover */
+        }
+
+        body.dark-mode {
+            background-color: #1a0d2e; /* Deep purple background */
+            color: #e0bbff; /* Light lavender text for good contrast */
+        }
+
+        body.dark-mode header {
+            background-color: #2a1b4d; /* Darker purple for header */
+        }
+
+        body.dark-mode section {
+            background: #2a1b4d; /* Matching section bg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode h2 {
+            color: #e0bbff; /* Light lavender */
+            border-bottom-color: #8a4af3; /* Vibrant purple accent */
+        }
+
+        body.dark-mode a {
+            background-color: #3a1a6e; /* Muted purple bg for links */
+            color: #e0bbff; /* Light text */
+        }
+
+        body.dark-mode a:hover {
+            background-color: #8a4af3; /* Vibrant purple on hover */
+            color: white;
+        }
+
+        body.dark-mode #toggleDarkMode {
+            background: #8a4af3; /* Vibrant purple in dark mode */
+        }
+
+        body.dark-mode #toggleDarkMode:hover {
+            background: #a855f7; /* Lighter purple on hover */
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
+
+    <header>
+        <h1>Study Resources Homepage</h1>
+        <p>Your one-stop gateway to essential study materials</p>
+    </header>
+
+    <main>
+        <section id="geography">
+            <h2>1. Geography</h2>
+            <ul>
+                <li><a href="https://zeluno.in/geography" target="_blank">Zeluno Geography</a></li>
+                <li><a href="https://exampariksha.com/study-material-notes/geography-study-material-notes/" target="_blank">Exampriksha Geography Study Material</a></li>
+            </ul>
+        </section>
+
+        <section id="history">
+            <h2>2. History</h2>
+            <ul>
+                <li><a href="https://zeluno.in/" target="_blank">Zeluno History</a></li>
+                <li><a href="https://exampariksha.com/study-material-notes/history-study-material-notes/" target="_blank">Exampriksha History Study Material</a></li>
+            </ul>
+        </section>
+
+        <section id="polity">
+            <h2>3. Polity and Constitution</h2>
+            <ul>
+                <li><a href="https://exampariksha.com/study-material-notes/political-science-study-material-notes/" target="_blank">Exampriksha Political Science Study Material</a></li>
+                <li><a href="https://inclusiveias.com/polity-notes-upsc/" target="_blank">Inclusive IAS Polity Notes</a></li>
+            </ul>
+        </section>
+
+        <section id="economics">
+            <h2>4. Economics</h2>
+            <ul>
+                <li><a href="https://chahalacademy.com/economy" target="_blank">Chahal Academy Economy</a></li>
+                <li><a href="https://exampariksha.com/study-material-notes/economics-study-material-notes/" target="_blank">Exampriksha Economics Study Material</a></li>
+            </ul>
+        </section>
+
+        <section id="science">
+            <h2>5. General Science</h2>
+            <ul>
+                <li><a href="https://www.pmfias.com/biology/" target="_blank">PMFIAS Biology</a></li>
+                <li><a href="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/2/2021/07/14165813/SSC-GA-GS-Capsule-new.pdf" target="_blank">Adda247 SSC GA/GS Capsule (PDF)</a></li>
+            </ul>
+        </section>
+
+        <section id="current-affairs">
+            <h2>6. Current Affairs</h2>
+            <ul>
+                <li><a href="https://www.gktoday.in/" target="_blank">GK Today</a></li>
+                <li><a href="https://www.jagranjosh.com/current-affairs" target="_blank">Jagran Josh Current Affairs</a></li>
+            </ul>
+        </section>
+
+        <section id="extra">
+            <h2>7. Extra Sites</h2>
+            <ul>
+                <li><a href="https://www.examveda.com/" target="_blank">Examveda</a></li>
+                <li><a href="https://www.smartkeeda.com/knowledge-bank" target="_blank">Smartkeeda Knowledge Bank</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript Code
+        // Simple dark mode toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleDarkMode');
+            const body = document.body;
+
+            toggleButton.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                toggleButton.textContent = isDark ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+            });
+
+            // Optional: Add smooth scrolling to sections if needed (e.g., for a nav menu)
+            // For now, just log a message on link click for interactivity
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Navigating to: ' + this.textContent.trim());
+                    // You could add analytics or loading indicators here
+                });
+            });
+        });
+    </script>
+</body>
+</html>
